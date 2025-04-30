@@ -11,7 +11,7 @@ https://api-inference.huggingface.co/models/Qwen/Qwen2.5-Coder-32B-Instruct/v1/c
 
 You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly 
 included credits.
-
+```
 Solution 1
 ```
 from smolagents import CodeAgent, DuckDuckGoSearchTool, LiteLLMModel
@@ -25,21 +25,24 @@ self.agent = CodeAgent(
     model=model, 
     max_steps=10
 )
-```        
+```
+```      
 Require.txt # add
 litellm==1.65.8
-
+```
 ___
 
 Error 2
+```
 Error fetching questions: 429 Client Error: Too Many Requests for url: https://agents-course-unit4-scoring.hf.space/questions 
-
+```
 Solution 2
+```
 # 2. Fetch Questions
 print(f"Fetching questions from: {questions_url}")
 try:
     response = requests.get(questions_url, timeout=30)
-
+```
 ___
 
 Error 3
@@ -47,7 +50,7 @@ Error 3
 
 Solution 3
 Add time.sleep() to solve.
-
+```
 import time
 
 # 3. Run your Agent
@@ -76,5 +79,5 @@ for item in questions_data:
           
           # Add delay
           time.sleep(2)![image](https://github.com/user-attachments/assets/595e8f61-effd-47cb-8de1-980b551133c8)
-
+```
 
