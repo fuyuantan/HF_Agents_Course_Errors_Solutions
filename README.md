@@ -27,7 +27,7 @@ self.agent = CodeAgent(
     max_steps=10
 )
 ```
-Require.txt 
+require.txt 
 ```      
 # add
 litellm==1.65.8
@@ -44,7 +44,7 @@ app.py
 # 2. Fetch Questions
 print(f"Fetching questions from: {questions_url}")
 try:
-    response = requests.get(questions_url, timeout=30)
+==    response = requests.get(questions_url, timeout=30) ==
 ```
 ___
 
