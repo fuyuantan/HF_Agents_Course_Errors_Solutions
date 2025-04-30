@@ -46,8 +46,9 @@ try:
 ___
 
 Error 3
-
-
+```
+Exceeded the limit of Requests Per Minute 30  of gemini-2.0-flash-lite
+```
 Solution 3
 Add time.sleep() to solve.
 ```
