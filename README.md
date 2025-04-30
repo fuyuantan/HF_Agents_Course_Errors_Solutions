@@ -13,6 +13,7 @@ You have exceeded your monthly included credits for Inference Providers. Subscri
 included credits.
 ```
 Solution 1
+app.py
 ```
 from smolagents import CodeAgent, DuckDuckGoSearchTool, LiteLLMModel
 
@@ -26,8 +27,9 @@ self.agent = CodeAgent(
     max_steps=10
 )
 ```
+Require.txt 
 ```      
-Require.txt # add
+# add
 litellm==1.65.8
 ```
 ___
@@ -37,6 +39,7 @@ Error 2
 Error fetching questions: 429 Client Error: Too Many Requests for url: https://agents-course-unit4-scoring.hf.space/questions 
 ```
 Solution 2
+app.py
 ```
 # 2. Fetch Questions
 print(f"Fetching questions from: {questions_url}")
@@ -47,10 +50,11 @@ ___
 
 Error 3
 ```
-Exceeded the limit of Requests Per Minute 30  of gemini-2.0-flash-lite
+Exceeded the limit of Requests Per Minute 30 of gemini-2.0-flash-lite
 ```
 Solution 3
 Add time.sleep() to solve.
+app.py
 ```
 import time
 
