@@ -32,6 +32,7 @@ require.txt
 # add
 litellm==1.65.8
 ```
+When use gemini-2.0-flash-lite, you may meet the Error 3 as follow, so take a look.
 ___
 
 Error 2
