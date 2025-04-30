@@ -12,7 +12,7 @@ https://api-inference.huggingface.co/models/Qwen/Qwen2.5-Coder-32B-Instruct/v1/c
 You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly 
 included credits.
 ```
-Solution 1
+Solution 1<br>
 app.py
 ```
 from smolagents import CodeAgent, DuckDuckGoSearchTool, LiteLLMModel
@@ -38,7 +38,7 @@ Error 2
 ```
 Error fetching questions: 429 Client Error: Too Many Requests for url: https://agents-course-unit4-scoring.hf.space/questions 
 ```
-Solution 2
+Solution 2<br>
 app.py
 ```
 # 2. Fetch Questions
@@ -52,8 +52,8 @@ Error 3
 ```
 Exceeded the limit of Requests Per Minute 30 of gemini-2.0-flash-lite
 ```
-Solution 3
-Add time.sleep() to solve.
+Solution 3<br>
+Add time.sleep() to solve.<br>
 app.py
 ```
 import time
